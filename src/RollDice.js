@@ -12,22 +12,22 @@ export const RollDice = () => {
 	const roll = () => {
 		let die1 = Math.floor(Math.random() * sides.length);
 		switch (die1) {
-			case 1:
+			case 0:
 				die1 = "one";
 				break;
-			case 2:
+			case 1:
 				die1 = "two";
 				break;
-			case 3:
+			case 2:
 				die1 = "three";
 				break;
-			case 4:
+			case 3:
 				die1 = "four";
 				break;
-			case 5:
+			case 4:
 				die1 = "five";
 				break;
-			case 6:
+			case 5:
 				die1 = "six";
 				break;
 			default:
@@ -37,22 +37,22 @@ export const RollDice = () => {
 
 		let die2 = Math.floor(Math.random() * sides.length);
 		switch (die2) {
-			case 1:
+			case 0:
 				die2 = "one";
 				break;
-			case 2:
+			case 1:
 				die2 = "two";
 				break;
-			case 3:
+			case 2:
 				die2 = "three";
 				break;
-			case 4:
+			case 3:
 				die2 = "four";
 				break;
-			case 5:
+			case 4:
 				die2 = "five";
 				break;
-			case 6:
+			case 5:
 				die2 = "six";
 				break;
 			default:
@@ -67,9 +67,7 @@ export const RollDice = () => {
 		setTimeout(() => {
 			setRolling(false);
 		}, 1000);
-
 	};
-
 
 	return (
 		<div className="RollDice">
